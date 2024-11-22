@@ -24,7 +24,7 @@ const ContactForm = () => {
 
     // Handle form submission (send data to an API)
     try {
-      const response = await fetch('http://localhost:5000/contact', {
+      const response = await fetch('https://campus-nav-backend.onrender.com/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
