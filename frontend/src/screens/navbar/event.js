@@ -14,7 +14,7 @@ const Eve = () => {
   useEffect(()=>{
     const fetch1 = async ()=>{
         try{
-            const res = await fetch(`http://localhost:5000/live`);
+            const res = await fetch(`https://campus-nav-backend.onrender.com/live`);
             if(res.ok){
                 const data = await res.json();
                 setLive(data);
@@ -34,7 +34,7 @@ const Eve = () => {
   useEffect(()=>{
     const fetch2 = async ()=>{
         try{
-            const res1 = await fetch(`http://localhost:5000/upcom`);
+            const res1 = await fetch(`https://campus-nav-backend.onrender.com/upcom`);
             if(res1.ok){
                 const data1 = await res1.json();
                 setUpcom(data1);
@@ -53,7 +53,7 @@ const Eve = () => {
   useEffect(()=>{
     const fetch3 = async ()=>{
         try{
-            const res2 = await fetch(`http://localhost:5000/outdate`);
+            const res2 = await fetch(`https://campus-nav-backend.onrender.com/outdate`);
             if(res2.ok){
               const data2 = await res2.json();
               setOut(data2);
