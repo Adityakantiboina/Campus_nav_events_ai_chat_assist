@@ -12,7 +12,7 @@ const HomePage = () => {
     const [selectedBox, setSelectedBox] = useState(null);
 
 
-    const BASE_URL = 'http://localhost:5000';
+    const BASE_URL = 'https://campus-nav-backend.onrender.com';
 
     useEffect(() => {
         const fetchEvents = async () => {
