@@ -16,7 +16,7 @@ const Nav = ({ darkMode, handleToggleDarkMode }) => {
       if (!token) return;
 
       try {
-        const response = await fetch(`${BASE_URL}/user`, {
+        const response = await fetch(`https://campus-nav-backend.onrender.com/user`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
