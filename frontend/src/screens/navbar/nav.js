@@ -8,7 +8,7 @@ const Nav = ({ darkMode, handleToggleDarkMode }) => {
   const [user, setUser] = useState(null);
   const [showDropdown, setShowDropdown] = useState(false); // To toggle username/logout dropdown
   const navigate = useNavigate();
-  const BASE_URL = 'http://localhost:5000';
+  const BASE_URL = 'https://campus-nav-backend.onrender.com';
 
   useEffect(() => {
     const fetchUserData = async () => {
