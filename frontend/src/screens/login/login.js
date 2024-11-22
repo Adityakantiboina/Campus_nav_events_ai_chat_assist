@@ -39,7 +39,7 @@ const Login = () => {
       alertMsg = "Please enter a valid password (minimum 6 characters)";
     } else {
       try {
-        const res = await axios.post("http://localhost:5000/login", login);
+        const res = await axios.post("https://campus-nav-backend.onrender.com/login", login);
         console.log(res.data);
         alertMsg = "Login Successful";
         alertType = "success";
