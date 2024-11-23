@@ -53,7 +53,7 @@ const ChatbotUI = () => {
 
   const generateResponse = async (prompt) => {
     try {
-      const response = await fetch('http://127.0.0.1:4000/generate-response', {
+      const response = await fetch('https://campus-nav-chat.onrender.com/generate-response', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
