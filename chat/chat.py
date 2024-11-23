@@ -68,7 +68,7 @@ def retrieve_relevant_paragraphs(file_path, query, top_k=1):
 
 
 def generate_llm_response(query):
-    pdf_path = "./chat/Direction.pdf"
+    pdf_path = "./Direction.pdf"
     context = retrieve_relevant_paragraphs(pdf_path, query, top_k=1)
     
     prompt = "the context is: "+context+". now based on the context only try to answer the question: "+query
