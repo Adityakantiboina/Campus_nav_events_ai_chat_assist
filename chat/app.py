@@ -5,7 +5,7 @@ import os
 from chat import generate_llm_response
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 @app.route('/generate-response', methods=['POST'])
 def generate_response():
